@@ -1,25 +1,36 @@
 {% extends 'base.html' %}
 {% block body %}
 
-<div class="container">
+<div class="row">
     <div class="col">
-        <div class="row">
+        <div id="home" class="content">
+            <h2>Year-wise Analysis</h2>
+            <p>It shows number & percentage of movies release per year and the average revenue of the movies.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-6">
             <div id='chart5' class='chart'></div>
             <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
             <script type='text/javascript'>
                 Plotly.plot('chart5',{{graph5 | safe}})
             </script>
         </div>
-        <br>
-        <div class="row">
+        <div class="col-md-6">
             <div id='chart6' class='chart'></div>
             <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
             <script type='text/javascript'>
                 Plotly.plot('chart6',{{graph6 | safe}})
             </script>
         </div>
-        <br>
-        <div class="row">
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
             <div id='chart7' class='chart'></div>
             <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
             <script type='text/javascript'>

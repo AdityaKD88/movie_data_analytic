@@ -1,9 +1,18 @@
 {% extends 'base.html' %}
+
 {% block body %}
 
 <div class="container">
     <div class="col">
         <div class="row">
+            <div id="home" class="content">
+                <h2>Top 10 Movies</h2>
+                <p>It shows top 10 movies with respect to different categories such as highest revenue, longest runtime, highest votes and rating.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row-md">
             <div id='chart1' class='chart'></div>
             <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
             <script type='text/javascript'>
