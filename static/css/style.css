@@ -4,31 +4,14 @@ html, body {
 }
 
 body {
-  height: 100vh;
-  background: radial-gradient(ellipse farthest-corner at center top, #ffee75, #ff8930);
+  background-image: url("/static/images/bg.jpg");
+  background-size: cover;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
 }
 
 .container {
   padding-top: 240px;
-}
-
-.app {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -70%);
-  width: 640px;
-  height: 390px;
-  background: cyan;
-  border-radius: 15px;
-}
-.app h2 {
-  color: #556152;
-  font-size: 22px;
-  padding: 20px 28px 0;
-  margin: -6px 0 0 0;
 }
 
 header {
@@ -39,84 +22,35 @@ header h1 {
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 21px;
+  font-size: 25px;
   text-transform: uppercase;
   text-align: center;
   color: #1c222b;
 }
-header h1 strong {
-  background: #f16018;
-  color: #fff;
-  display: inline-block;
-  border-radius: 30px;
-  padding: 6px;
-  font-size: 83%;
-  position: relative;
-  left: 2px;
-}
-header nav {
-  cursor: pointer;
-  width: 18px;
-  position: absolute;
-  top: 28px;
-}
-header nav::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  background: #0e41e9;
-  border-radius: 2px;
-  box-shadow: 0 5px 0 #0e41e9, 0 10px 0 #0e41e9;
-}
-
-.movies {
-  display: flex;
-  padding: 8px 18px;
-}
-.movies .movie {
-  padding: 10px;
-  cursor: pointer;
-}
-.movies .movie .poster {
-  width: 90%;
-  margin-bottom: 6px;
-  border-radius: 4px;
-}
-.movies .movie .title {
-  color: #575f50;
-  margin-bottom: 4px;
-  font-size: 16px;
-}
-.movies .movie .info {
-  color: #1c222b;
-  font-size: 11px;
-  opacity: 0.8;
-}
-.movies .movie .desc {
-  display: none;
-}
 
 .content {
-  right: 80px;
   padding-right: 200px;
-  left: 150px;
+  left: 0px;
   top: 50px;
   position: absolute;
-  padding-bottom: 0px;
 }
 
 .content h2 {
   font-size: 80px;
   font-family: Orbitron;
   margin-top: 52px;
-  color: #000080;
+  color: #9797be;
 }
 
 .content p {
   font-size: 18px;
   padding: 10px;
-  color: #800000;
+  color: #d4c361;
   display: inline-block;
   border: 1px solid #007CBF;
+}
+
+.app{
+  padding-top: 20px;
+  padding-left: 12%;
 }

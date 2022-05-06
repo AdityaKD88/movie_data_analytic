@@ -1,6 +1,8 @@
 flask
 pandas
 numpy
+plotly
 plotly-express
 matplotlib
 seaborn
+json
